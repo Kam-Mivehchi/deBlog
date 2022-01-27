@@ -1,7 +1,8 @@
 module.exports = {
   format_date: (date) => {
     // Format date as MM/DD/YYYY
-    return date.toLocaleDateString();
+    var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
+    return date.toLocaleDateString('en-US', options);
   },
   format_amount: (amount) => {
     // format large numbers with commas
