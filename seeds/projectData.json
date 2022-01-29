@@ -1,32 +1,26 @@
 [
   {
     "title": "Music Near Me",
-    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
-    "needed_funding": 5000
+    "description": "A mobile app that will send you notifications whenever a concert is playing in your area."
   },
   {
     "title": "The Ultimate Tech Quiz",
-    "description": "A web app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!",
-    "needed_funding": 10000
+    "description": "A web app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!"
   },
   {
     "title": "Roll 'Em Up",
-    "description": "A game for Windows and macOS where players move a ball through a series of increasingly challenging mazes.",
-    "needed_funding": 800
+    "description": "A game for Windows and macOS where players move a ball through a series of increasingly challenging mazes."
   },
   {
     "title": "2 Much Music Near Me",
-    "description": "A mobile 2 Much app that will send you notifications whenever a concert is playing in your area.",
-    "needed_funding": 500
+    "description": "A mobile 2 Much app that will send you notifications whenever a concert is playing in your area."
   },
   {
     "title": "2 Much The Ultimate Tech Quiz",
-    "description": "A web 2 Much app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!",
-    "needed_funding": 100
+    "description": "A web 2 Much app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!"
   },
   {
     "title": "2 Much Roll 'Em Up",
-    "description": "A 2 Much game for Windows and macOS where players move a ball through a series of increasingly challenging mazes.",
-    "needed_funding": 8003
+    "description": "A 2 Much game for Windows and macOS where players move a ball through a series of increasingly challenging mazes."
   }
 ]
