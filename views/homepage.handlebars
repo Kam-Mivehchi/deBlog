@@ -22,11 +22,20 @@
       <button class="btn">Like</button>
       <button class="btn">Dislike</button>
     </div>
-    <div class="form-group">
-      <textarea class="form-input" placeholder="Add a comment" id="comment" name="comment"></textarea>
-    </div>
-    <div class="form-group">
+    <form class="form new-comment-form" data-blogID="{{project.id}}">
 
-    </div>
+      <div class=" form-group">
+        <textarea class="form-input" id="comment-desc" placeholder="Add a comment" name="comment-desc"></textarea>
+
+      </div>
+      <div class="form-group">
+        <button type="submit" class=" btn btn-primary">Create</button>
+      </div>
+    </form>
+
+
   </div>
-  {{/each}}
+</div>
+{{/each}}
+
+<script src="./js/comment.js"></script>

@@ -8,7 +8,43 @@
     <span class="dollar-amount">{{format_amount }}</span>
 
   </p>
-  <p>
-    <button class="btn btn-primary">Fund this Project!</button>
-  </p>
+  <form class="form new-comment-form" data-blogID="{{project.id}}">
+
+    <div class=" form-group">
+      <textarea class="form-input" id="comment-desc" placeholder="Add a comment" name="comment-desc"></textarea>
+
+    </div>
+    <div class="form-group">
+      <button type="submit" class=" btn btn-primary">Create</button>
+    </div>
+  </form>
 </div>
+
+<script>
+  const newFormHandler = async (event) => {
+    event.preventDefault();
+
+    console.log("the blog id --- ", event.target.dataset.blogid)
+
+    const description = document.querySelector('textarea[name="comment-desc"]').value.trim();
+
+
+    console.log(description);
+    if (description) {
+      const response = await fetch(`/api/comments`, {
+        method: 'POST',
+        body: JSON.stringify({ description, blog_id: event.target.dataset.blogid }),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+      console.log(response)
+      if (response.ok) {
+        document.location.reload();
+      } else {
+        alert('Failed to create comment');
+      }
+    }
+  };
+  document.querySelector('#new-comment-form').addEventListener('submit', newFormHandler)
+</script>
